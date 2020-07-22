@@ -1,0 +1,99 @@
+  /// CARDS
+
+.cards {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	//align-content: space-around;
+	flex-direction: column;
+	//border: 1px solid red;
+	
+				&.compact-cards {
+						flex-direction: row;
+						flex-wrap: wrap;	
+					}	  
+
+				  .card {
+					  //border: 1px solid yellow;	  
+					  margin-bottom: 1rem;
+					  border-radius: .2rem;
+					  height: 18vh;
+					  max-height: 18vh;
+					  display: flex; 
+					  
+					&.ourfoodcard {
+						background: url(../img/OurFood.jpg) center center no-repeat;
+						background-size:cover;
+						}		
+				    
+				    &.ourdrinkcard {
+					    background: url(../img/OurDrinks.jpg) center center no-repeat;
+					    background-size:cover;
+						}
+ 
+				  	
+				  	h1 {
+					  	align-self:flex-end;
+					  	padding: .5rem;
+					  	background: $dark-blue;
+					  	//width: 100%;					  
+					  	font-size: 2rem;
+					  	text-align: center;
+					  	color: #fff;
+					  	border-radius: 0 0 .2rem .2rem;
+					  						  	transition: all .1s ease-in-out;
+
+					  	&:hover {
+						  	background: lighten($dark-blue, 4%); text-decoration: underline;
+					  	}
+				  		}
+				  		
+				  	a {	
+					  	align-self:flex-end;
+					  	width: 100%;					  
+					  	font-size: 2rem;
+					  	text-align: center;
+					  	color: #fff;
+					  	border-radius: 0 0 .2rem .2rem;
+					  	text-decoration: none;
+					  	transition: all .1s ease-in-out;
+					  	
+					  	&:hover {
+						  	background: lighten($dark-blue, 20%);
+					  	}
+					  	
+				  	}	
+			
+					&.compact-card {
+						//border: 1px solid red;
+						width: calc(50% - 1rem);
+						max-width:50%;
+						font-size: .8rem;
+
+						
+						&:nth-child(odd) {margin-right: 1rem}	
+					
+					h1 {font-size: 1.3rem;}
+					
+					
+						&.starters {background: url(../img/food/starters.jpg) center center no-repeat; background-size:cover;}
+						&.sides {background: url(../img/food/sides.jpg) center center no-repeat; background-size:cover;}					
+						&.mains {background: url(../img/food/mains.jpg) center center no-repeat; background-size:cover;}
+						&.grill {background: url(../img/food/special.jpg) center center no-repeat; background-size:cover;}
+						&.burgers {background: url(../img/food/burger.jpg) center center no-repeat; background-size:cover;}						
+						&.sunday {background: url(../img/food/sunday.jpg) center center no-repeat; background-size:cover;}																	
+						&.brunch {background: url(../img/food/brunch.jpg) center center no-repeat; background-size:cover;}						
+						&.kids {background: url(../img/food/kids.jpg) center center no-repeat; background-size:cover;}					
+						&.veggie {background: url(../img/food/veggie.jpg) center center no-repeat; background-size:cover;}						
+						&.specials {background: url(../img/food/special.jpg) center center no-repeat; background-size:cover;}						
+						
+						
+						}  			
+			
+					
+			
+			} //oard
+	  
+	  }//cards
+	  
+	  

@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+ <html>
+ 	<head>
+ 		<title> </title>
+ 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ 			
+ 			<meta name="apple-mobile-web-app-capable" content="yes">
+			<meta name="mobile-web-app-capable" content="yes">
+			
+			 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+			<meta name="robots" content="noindex"> <!-- for prototype -->
+ 
+ 			 
+ 			 <script src="assets/js/jq-min.js"></script>
+ 			 <script src="assets/js/app-min.js"></script>
+ 			 
+ 			 
+ 			 <link rel="stylesheet" type="text/css" media="screen" href="assets/scss/style.css"/>
+
+
+<style>
+	* {box-sizing: border-box;}
+	body {padding: 0;margin: 0;}
+	
+	.container {border: 1px solid red; min-height: 70vh; position:relative; overflow: hidden; margin: 0 auto;}
+		
+		
+		#content {background: rgba(250, 56, 56, 0.3);height: 90%; width:100%;position: absolute; top: 0; transition: all .4s cubic-bezier(.51,.01,.43,1.25);}
+		#content.pushed {margin-left: 60vw;}
+
+		
+		
+		nav {background: rgba(86, 59, 242, 0.2); color: #fff;}
+		.nav .shown {}
+				 
+</style>
+
+
+<script>
+	$(function() {
+
+$('#nav-toggle').click(function() {
+ $('main.content').toggleClass('pushed');
+});
+});
+
+	</script>
+ 	</head>
+<body>
+
+<button id="nav-toggle">O</button>
+
+
+
+<div class=".container"> 
+	 
+	<nav role="navigation" class="">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">From the kitchen</a></li>
+        <li><a href="#">From the bar</a></li>
+        <li><a href="#">View your order</a></li>
+        <li class="lowfocus"><a href="#">Find your Pub</a></li>
+        <li class="lowfocus"><a href="#">Privacy</a></li>
+      </ul>
+    </nav>
+	 
+	 
+	<main id="content">
+		<header>
+			<h1 class="home-page">Welcome to <br />The Dog and Duck</h1>
+			<p class="home-page">Our Menu</p>
+		</header>	
+   
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consequatur natus dolorem laboriosam quos autem veritatis sunt quae nihil ab delectus sint modi officiis dolore architecto error voluptates quibusdam excepturi.</p>
+	</main><!-- end content -->
+  
+</div><!-- eof container -->
+
+
+
+  
+
+</body>
+</html>
+
+ 
