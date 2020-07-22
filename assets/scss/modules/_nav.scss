@@ -21,8 +21,7 @@
 				&.lowfocus a{
 					font-size: 1.2rem; 
 					color: darken($teal, 20%); 
-					}
-										
+					}										
 			
 				a{ 
 					text-decoration: none; 
@@ -53,7 +52,11 @@
 		background:  #318a8c;
 		border-radius: 50%;
 		text-decoration: none;
-	    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.59);    
+	    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.59); 
+	    
+	    &::after {content:'\2630'; font-size: 90%;}   
+
+
 
 	    &:hover {
 		     box-shadow: 
