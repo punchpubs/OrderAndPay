@@ -193,22 +193,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/assets/scss 200713.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/scss 200713.zip",
-		"oF": 0
-		},
-	"/assets/scss.zip": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/scss.zip",
-		"oF": 0
-		},
 	"/assets/scss/_bourbon.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -781,6 +765,19 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/assets/scss/modules/_nav-Backup.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/modules/_nav-Backup.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/assets/scss/modules/_nav.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -790,6 +787,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/scss/modules/_nav.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/assets/scss/modules/_products.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/scss/modules/_products.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
@@ -1049,20 +1059,20 @@
 		"oAP": "/food.html",
 		"oF": 0
 		},
+	"/home.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/home.html",
+		"oF": 0
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/index.html",
-		"oF": 0
-		},
-	"/main.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/main.html",
 		"oF": 0
 		},
 	"/README.md": {

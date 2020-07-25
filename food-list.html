@@ -22,17 +22,43 @@
 <body>
 	
 
+	<div class="controls">
+	<button id="nav-toggle"></button>
+	</div>
 
 <div class="container">
 	
-	<nav role="navigation" class="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="food.html">Our Food</a></li>
-        <li><a href="drinks.html">Our Drinks</a></li>
-        <li><a href="#">View your order</a></li>
-        <li class="lowfocus"><a href="#">Find your Pub</a></li>
-        <li class="lowfocus"><a href="#">Privacy & Terms of use</a></li>
+    <nav role="navigation">
+      <ul class="main-menu">
+        <li><a href="home.html">Home</a></li>        
+        <li id="food"><a href="#">Our Food</a>
+        	<ul class="sub-menu">
+				<li><a href="food.html">All food</a></li>
+				<li><a href="food-list.html">Starters</a></li>
+				<li><a href="food-list.html">Sides</a></li>
+				<li><a href="food-list.html">Classic Mains</a></li>
+				<li><a href="food-list.html">From the Grill</a></li>
+				<li><a href="food-list.html">Burgers</a></li>
+				<li><a href="food-list.html">Brunch</a></li>
+				<li><a href="food-list.html">Sunday Lunch</a></li>
+				<li><a href="food-list.htmll">Kids Menus</a></li>
+				<li><a href="food-list.html">Vegetarian/Vegan</a></li>
+				<li><a href="food-list.html">Specials</a></li>
+			</ul>	
+        </li>        
+        <li id="drink"><a href="#">Our Drinks</a>
+        	<ul class="sub-menu">
+				<li><a href="food.html">All drinks</a></li>
+				<li><a href="food-list.html">Lager</a></li>
+				<li><a href="food-list.html">Cider</a></li>
+				<li><a href="food-list.html">Ale</a></li>
+				<li><a href="food-list.html">more ale</a></li>
+				<li><a href="food-list.html">even more ale</a></li>
+			</ul>               
+        </li>        
+        <li class="item"><a href="#">View your order</a></li>
+        <li class="item lowfocus"><a href="#">Find your Pub</a></li>
+        <li class="item lowfocus"><a href="#">Privacy & Terms of use</a></li>
       </ul>
     </nav>
 	
@@ -43,73 +69,102 @@
 		</header>			
 	<section class="products">
 		
-		<title><h2>Home Comforts</h2></title>
+		<section class="menu-section">
+			
+			<h2>Home Comforts - Traditional and Hearty</h2>
 		
-		<div class="product">
-			<a href="dish.html"><h3>Traditional Steak & Ale Pie</h3></a>
-		</div>
-
-		<div class="product">
-			<a href="dish.html"><h3>Sausage and Spring Onion Mash</h3></a>
-		</div>
-				
-		<div class="product">
-			<a href="dish.html"><h3>Scampi and Chips</h3></a>
-		</div>
-
-		<div class="product">
-			<a href="dish.html"><h3>Hunters Chicken</h3></a>
-		</div>		
-		<div class="product">
-			<a href="dish.html"><h3>Starters</h3></a>
-		</div>
-
-		<div class="product">
-			<a href="dish.html"><h3>Starters</h3></a>
-		</div>
-		
-		<div class="product">
-			<a href="dish.html"><h3>Starters</h3></a>
-		</div>
-
-		<div class="product">
-			<a href="dish.html"><h3>Starters</h3></a>
-		</div>	
-
-		<div class="product">
-			<a href="dish.html"><h3>Starters</h3></a>
-		</div>
-
-		<div class="product">
-			<a href="dish.html"><h3>Starters</h3></a>
-		</div>
-				
-		<div class="product">
-			<a href="dish.html"><h3>Starters</h3></a>
-		</div>
-
-		<div class="product">
-			<a href="dish.html"><h3>Starters</h3></a>
-		</div>		
-		<div class="product">
-			<a href="dish.html"><h3>Starters</h3></a>
-		</div>
-
-		<div class="product">
-			<a href="dish.html"><h3>Starters</h3></a>
-		</div>
-		
-		<div class="product">
-			<a href="dish.html"><h3>Starters</h3></a>
-		</div>
-
-		<div class="product">
-			<a href="dish.html"><h3>Starters</h3></a>
-		</div>	
-
-
+				<a href="dish.html">
+					<div class="product"><p>Traditional Steak & Ale Pie</p>
+					</div>
+				</a>
 					
-	</section>		
+				<a href="dish.html">
+					<div class="product"><p>Sausage and Spring Onion Mash</p>
+					</div>
+				</a>
+									
+				<a href="dish.html">
+					<div class="product"><p>Scampi and Chips</p>
+					</div>
+				</a>	
+				
+				<a href="dish.html">
+					<div class="product"><p>Hunters Chicken</p></a>
+				</div>		
+				
+				<a href="dish.html">
+					<div class="product"><p>Baked Vegetable Lasagne <span class="V"></span></p> 
+					</div>
+				</a>	
+				
+				<a href="dish.html">
+					<div class="product"><p>Traditional Fish and Chips</p>
+					</div>
+				</a>
+					
+		</section> <!-- eof menu-section -->
+		
+		<section class="menu-section">
+			
+			<h2>Feel Good Food - under 600 calories</h2>		
+		
+		
+				<a href="dish.html">
+					<div class="product"><p>Superfood Salad <span class="GF"></span><span class="VE"></span></p> 										</div>
+				</a>	
+				
+				<a href="dish.html">
+					<div class="product"><p>Kirstys Pasta Bolognese</p></a>
+				</div>	
+		
+				<a href="dish.html">
+					<div class="product"><p>Japanese Udon Noodles</p>
+					</div>
+				</a>	
+				
+				<a href="dish.html">
+					<div class="product"><p>Vegan 'Meat' Balls <span class="VE"></span></p> 
+					</div>
+				</a>
+					
+		</section>	<!-- eof menu-section -->
+		
+		<section class="menu-section">
+			
+			<h2>A N Other Section</h2>			
+			
+				<a href="dish.html">
+					<div class="product"><p>Dish Name</p>
+					</div>
+				</a>	
+				
+				<a href="dish.html">
+					<div class="product"><p>Dish Name</p></a>
+				</div>		
+				
+				<a href="dish.html">
+					<div class="product"><p>Dish Name</p>
+					</div>
+				</a>	
+				
+				<a href="dish.html">
+					<div class="product"><p>Dish Name</p>
+					</div>
+				</a>			
+				
+				<a href="dish.html">
+					<div class="product"><p>Dish Name</p>
+					</div>
+				</a>	
+				
+				<a href="dish.html">
+					<div class="product"><p>Dish Name</p>
+					</div>
+				</a>	
+
+		</section>	<!-- eof menu-section -->
+					
+	</section>	<!-- eof product -->	
    
 
 	</main><!-- end content -->
@@ -118,7 +173,6 @@
 </div><!--end container-->
 
 
-	<button id="nav-toggle"></button>
 
 
 

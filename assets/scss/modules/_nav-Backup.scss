@@ -1,6 +1,6 @@
 	nav {
 		position: absolute;
-		top: 8rem;
+		top: 10%;
 		width: 100%;
 		text-align: center;
 	    height: 100%;
@@ -11,9 +11,9 @@
 			margin: 0;
 			padding: 0;
 			list-style: none; 
-			
-			
-			li { 
+
+	    
+	    	li { 
 		    	display: block;
 				font-size: 1.5rem;
 				border-top: 1px solid lighten($dark-blue, 4%);
@@ -35,61 +35,18 @@
 				     color: rgba(255, 255, 255, 0.8);
 				     background: $teal;
 				     }
-				}
-    		}	
-			
-			
-		.sub-menu {
-			background: darken($dark-blue, 3%);
-			box-shadow: inset 0 5px 20px darken($dark-blue, 1%);
-			max-height:0;
-			overflow: hidden;
-		}
-		
-			
-		.open-sub {
-							
-			.sub-menu {
-				max-height: 100%;
-			
-			li { 
-		    	display: block;
-				border-top: 1px solid lighten($dark-blue, 4%);
-				color: rgba(255, 255, 255, 0.8);
-
-			
-				a{ 
-					text-decoration: none; 
-					display: block; 
-					padding: 1em; 
-					transition: all .3s ease-in;
-					background: darken($teal, 20%);
-			    
-			     &:hover,
-			     &:active {
-				     color: rgba(255, 255, 255, 0.8);
-				     background: darken($teal, 10%);
-				     }
-				}
-
-				}
-			
-			}	
-		}	
-
+				 }
+    		}
+    	}
     }
-}
-    
-   
-   
-nav  ul li.open-sub a{ background: $teal;color: rgba(255, 255, 255, .8);}
-
-
     
     #nav-toggle {
 
-		color: #fff;
-/*
+		position: absolute;
+		top: 1rem;
+		left: 2rem;
+
+		
 		text-align: center;
 		line-height: 3rem;
 		width:3rem;
@@ -98,32 +55,86 @@ nav  ul li.open-sub a{ background: $teal;color: rgba(255, 255, 255, .8);}
 		
 		background:  #318a8c;
 	    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.59); 
-*/
 	    
 	    &::after {content:'\2630';}   
 
 
 	    &:hover {
-/*
 		     box-shadow: 
 		     2px 2px 10px rgba(0, 0, 0, 0.59),
 		     inset .3rem .3rem .5rem darken($teal, 5%),
 		     inset -0.3rem  -0.3rem .5rem darken($teal, 5%);
-*/
 		     }
 	    
 	    &:active {
-/*
 		     background: lighten($teal, 10%);
 		     box-shadow: 
 		     2px 2px 10px rgba(255, 255, 255, 0.1),
 		     -2px -2px 10px rgba(255, 255, 255, 0.1), 
 		     inset .2rem .2rem .5rem darken($teal, 2%), 
 		     inset -0.2rem  -0.2rem .2rem darken($teal, 2%);
-*/
 		     }
  
      }
      
+     
+     
+     
+     
+/*
+     
+ .main-menu{
+    overflow: hidden;
+    border: 1px solid yellow;
+	}
+	
+.main-menu .li{
+    overflow: hidden; 
+    border: 1px solid #fff;
 
+}
+.btn{
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.33);
+}
+
+
+.sub-menu{
+    background: #273057;
+    overflow: hidden;
+    transition: max-height 0.7s;
+    max-height: 0;
+}
+.sub-menu li a{
+    display: block;
+    color: #fff;
+    
+}
+
+.sub-menu li a{
+    display: block;
+    color: #fff;
+    
+}
+
+
+
+
+.sub-menu li a:after{
+    content: '';
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+.sub-menu li a:hover{
+    background: #273057;
+    transition: all 0.3s;
+}
+.sub-menu li a:last-child{
+    border:none;
+}
+.item:target .sub-menu{
+    max-height: 100%;
+}
  
+*/

@@ -16,6 +16,11 @@ html {
 	
 	html, body {background: $dark-blue;}
 	
+	.controls {
+		padding: .5rem 1rem;
+		height: 4rem;
+	}
+	
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -24,12 +29,12 @@ html {
 		min-height: -webkit-fill-available; 
 		//position:relative;
 		overflow-x: hidden;
-		margin: 0 auto;
+		margin: 5rem auto 0;
 		background: url(../img/BlackPineapple.png) bottom center no-repeat; }	
 		
 	#content {
 		position: absolute;
-		top: 0;
+		top: 6rem;
 		transition: all .4s cubic-bezier(.51,.01,.43,1.25);
 		background: lighten($teal, 60%);	
 		box-shadow:
@@ -46,12 +51,14 @@ html {
 		border-radius: 1rem;
 		
 		&.pushed {margin-left: 86vw;}
+		
 
 	}
 	
 
    
 header { text-align: center; margin: 2rem; color: $teal;}
+
 
 
 
