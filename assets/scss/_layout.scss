@@ -1,5 +1,5 @@
 
-	* {box-sizing: border-box;}
+	* {box-sizing: border-box; -webkit-backface-visibility: hidden;}
 	
 /*
 	
@@ -14,7 +14,7 @@ html {
 }
 */
 	
-	html, body {background: $dark-blue;}
+	html, body {background: $dark-blue; }
 	
 	.controls {
 		padding: .5rem 1rem;
@@ -25,14 +25,16 @@ html {
 		display: flex;
 		flex-direction: column;
 		justify-content: center ;
-		min-height: calc(90vh + 2rem);
+		min-height: calc(100vh - 2rem);
 		min-height: -webkit-fill-available; 
 		//position:relative;
 		overflow-x: hidden;
 		margin: 5rem auto 0;
-		background: url(../img/BlackPineapple.png) bottom center no-repeat; }	
+		background: url(../img/BlackPineapple.png) center center no-repeat; }	
 		
 	#content {
+		animation: fadein .2s ease-in; 
+
 		position: absolute;
 		top: 6rem;
 		transition: all .4s cubic-bezier(.51,.01,.43,1.25);
@@ -42,7 +44,7 @@ html {
 			-1rem -1rem 2rem lighten($dark-blue, 10%),
 			inset 50px 50px 90px lighten($dark-blue, 80%),
 			inset -50px -50px 90px lighten($dark-blue, 90%);
-		min-height: 90vh;
+		min-height: 80vh;
 		min-height: calc(-webkit-fill-available - 2rem); //webkit viewport height issue on mobile
 		width: calc(100% - 2rem);
 		margin:1rem 1rem;
