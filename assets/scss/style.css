@@ -394,7 +394,6 @@ button, a.button {
   background: #318a8c;
   border: 1px solid #fff;
   padding: 1rem 1.2rem;
-  margin: 1rem auto;
   text-decoration: none;
   border-radius: 50%;
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
@@ -474,24 +473,19 @@ button:active, a.button:active {
   box-sizing: border-box;
   -webkit-backface-visibility: hidden; }
 
-/*
-	
-	body {
-  min-height: 100vh;
-  /* mobile viewport bug fix 
-  min-height: -webkit-fill-available;
-}
-
-html {
-  height: -webkit-fill-available;
-}
-*/
 html, body {
   background: #13252c; }
 
 .controls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #318a8c;
+  border-bottom: 1px solid #3eafb2;
   padding: .5rem 1rem;
-  height: 4rem; }
+  height: 4rem;
+  box-shadow: 0 0 20px #13252c; }
 
 .container {
   display: flex;
@@ -500,24 +494,24 @@ html, body {
   min-height: calc(100vh - 2rem);
   min-height: -webkit-fill-available;
   overflow-x: hidden;
-  margin: 5rem auto 0;
+  margin: 0 auto;
   background: url(../img/BlackPineapple.png) center center no-repeat; }
 
 #content {
   -webkit-animation: fadein .2s ease-in;
           animation: fadein .2s ease-in;
   position: absolute;
-  top: 6rem;
+  top: 5rem;
   transition: all 0.4s cubic-bezier(0.51, 0.01, 0.43, 1.25);
   background: #f4fbfb;
   box-shadow: 1rem 1rem 2rem #040708, -1rem -1rem 2rem #224350, inset 50px 50px 90px #e4eff3, inset -50px -50px 90px white;
   min-height: 80vh;
   min-height: calc(-webkit-fill-available - 2rem);
   width: calc(100% - 2rem);
-  margin: 1rem 1rem;
+  margin: 1rem 1rem 2rem;
   padding: 0;
   border: 2px solid #fff;
-  border-radius: 1rem; }
+  border-radius: 0.1rem; }
   #content.pushed {
     margin-left: 86vw; }
 
@@ -799,36 +793,19 @@ nav ul li.open-sub a.has-children::after {
   margin-left: 3rem;
   content: '\2715'; }
 
-#nav-toggle {
+button.navToggle {
+  position: relative;
+  background: #318a8c;
+  border: none;
+  border-radius: 0;
   color: #fff;
-  /*
-		text-align: center;
-		line-height: 3rem;
-		width:3rem;
-		border-radius: 1.5rem;
-		text-decoration: none;
-		
-		background:  #318a8c;
-	    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.59); 
-*/ }
-  #nav-toggle::after {
-    content: '\2630'; }
-  #nav-toggle:hover {
-    /*
-		     box-shadow: 
-		     2px 2px 10px rgba(0, 0, 0, 0.59),
-		     inset .3rem .3rem .5rem darken($teal, 5%),
-		     inset -0.3rem  -0.3rem .5rem darken($teal, 5%);
-*/ }
-  #nav-toggle:active {
-    /*
-		     background: lighten($teal, 10%);
-		     box-shadow: 
-		     2px 2px 10px rgba(255, 255, 255, 0.1),
-		     -2px -2px 10px rgba(255, 255, 255, 0.1), 
-		     inset .2rem .2rem .5rem darken($teal, 2%), 
-		     inset -0.2rem  -0.2rem .2rem darken($teal, 2%);
-*/ }
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  border: 1px solid #39a0a3; }
+  button.navToggle:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+  button.navToggle:active {
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 30px rgba(255, 255, 255, 0.3); }
 
 .products {
   width: 90%;
@@ -843,7 +820,7 @@ nav ul li.open-sub a.has-children::after {
       background: #13252c;
       color: #fff;
       padding: 1rem;
-      border-radius: .5rem; }
+      border-radius: .1rem; }
     .products .menu-section a {
       text-decoration: none;
       transition: all .8s ease; }

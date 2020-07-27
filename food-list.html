@@ -22,16 +22,15 @@
 <body>
 	
 
-	<div class="controls">
-	<button id="nav-toggle"></button>
-	</div>
+
 
 <div class="container">
 	
     <nav role="navigation">
+	    
       <ul class="main-menu">
         <li><a href="home.html">Home</a></li>        
-        <li id="food"><a href="#">Our Food</a>
+        <li id="food"><a href="#" class="has-children">Our Food</a>
         	<ul class="sub-menu">
 				<li><a href="food.html">All food</a></li>
 				<li><a href="food-list.html">Starters</a></li>
@@ -46,7 +45,7 @@
 				<li><a href="food-list.html">Specials</a></li>
 			</ul>	
         </li>        
-        <li id="drink"><a href="#">Our Drinks</a>
+        <li id="drink"><a href="#" class="has-children">Our Drinks</a>
         	<ul class="sub-menu">
 				<li><a href="food.html">All drinks</a></li>
 				<li><a href="food-list.html">Lager</a></li>
@@ -61,6 +60,7 @@
         <li class="item lowfocus"><a href="#">Privacy & Terms of use</a></li>
       </ul>
     </nav>
+	
 	
 
 	<main id="content">
@@ -173,7 +173,9 @@
 </div><!--end container-->
 
 
-
+	<div class="controls">
+	<button id="nav-toggle" class="navToggle">MENU</button>
+	</div>
 
 
 </body>
