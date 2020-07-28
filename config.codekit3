@@ -1035,12 +1035,28 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/basket.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/basket.html",
+		"oF": 0
+		},
 	"/build/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/.gitignore",
+		"oF": 0
+		},
+	"/dish.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dish.html",
 		"oF": 0
 		},
 	"/food-list.html": {

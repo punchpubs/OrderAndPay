@@ -38,47 +38,7 @@
 			border: solid #fff .0325rem;
 			border-bottom: solid lighten($dark-blue, 60%) .0325rem;
 			transition: all .5s ease; 
-			
-			.VE { //sizes are connected - line height and width double border radius to maintain circle
-				float: right;
-				text-align: center;
-				background: lighten($yellow, 30%);
-				font-size: .6rem;
-				line-height: 1.6rem;
-				width:1.6rem;
-				font-weight: bold;
-				border-radius: .8rem;
-				margin-right: .3rem;
-					&::after {content:"VE"}
-				}
-				
-			.V { //sizes are connected - line height and width double border radius to maintain circle
-				float: right;
-				text-align: center;
-				background: lighten($green, 30%);
-				font-size: .6rem;
-				line-height: 1.6rem;
-				width:1.6rem;
-				font-weight: bold;
-				border-radius: .8rem;
-
-					&::after {content:" V "}
-				}
-			
-			.GF { //sizes are connected - line height and width double border radius to maintain circle
-				float: right;
-				text-align: center;
-				background: lighten($purple, 30%);
-				font-size: .6rem;
-				line-height: 1.6rem;
-				width:1.6rem;
-				font-weight: bold;
-				border-radius: .8rem;
-
-					&::after {content:"GF"}
-				}
-			
-			
+					
 			&:hover{
 				background: #fff;
 				box-shadow: 0px 4px 6px lighten($dark-blue, 70%);
@@ -97,5 +57,206 @@
 	 	}
 					  
 	  }//products
+	  
+	  
+//Allergy markers 
+
+			.VE { //sizes are connected - line height and width double border radius to maintain circle
+				text-align: center;
+				background: lighten($yellow, 30%);
+				color: $dark-blue;
+				font-size: .6rem;
+				line-height: 1.6rem;
+				width:1.6rem;
+				font-weight: bold;
+				border-radius: .8rem;
+				margin-right: .3rem;
+					&::after {content:"VE"}
+				}
+				
+			.V { //sizes are connected - line height and width double border radius to maintain circle
+				text-align: center;
+				background: lighten($green, 30%);
+				color: $dark-blue;
+				font-size: .6rem;
+				line-height: 1.6rem;
+				width:1.6rem;
+				font-weight: bold;
+				border-radius: .8rem;
+
+					&::after {content:" V "}
+				}
+			
+			.GF { //sizes are connected - line height and width double border radius to maintain circle
+				text-align: center;
+				background: lighten($purple, 30%);
+				color: $dark-blue;
+				font-size: .6rem;
+				line-height: 1.6rem;
+				width:1.6rem;
+				font-weight: bold;
+				border-radius: .8rem;
+
+					&::after {content:"GF"}
+				}
+				
+		header .VE, header .V, header .GF {
+			margin: 0 auto;
+		}
+				
+		.product .GF, .product .VE, .product .V,  {
+				float:right;
+				}		  
+	  
+	  
+	  // product page specific styles
+	  
+	  .product-page {
+		  		  
+		header {
+			margin: 2rem 2rem 1rem;
+			}
+		  
+		.product-img {
+			width:100%;
+			}
+		  
+		.prod-desc {
+			padding: 0 1rem;
+			}
+		  
+		.prod-price {
+			font-size:1.1rem;
+			font-weight: bold;
+			float:right;
+			//color: $teal;
+			}
+		
+		.whynotadd {
+			background: lighten($yellow, 44%);
+			margin: 2rem 1rem;
+			padding: .2rem 1rem;
+			border-top: 1px solid lighten($yellow, 20%);
+			border-bottom: 1px solid lighten($yellow, 20%);
+
+			
+			li {list-style: none; display: block;}
+				
+				p { }
+				
+				.prod-price {
+					font-size: 1rem;
+					font-weight: 300;
+					float: right;
+					font-weight: bold;
+					}
+				
+				}
+				 	  	
+			.customise {
+			background: lighten($yellow, 70%);
+			margin: 2rem 1rem;
+			padding: .2rem 1rem;
+			border-top: 1px solid lighten($yellow, 40%);
+			border-bottom: 1px solid lighten($yellow, 40%);
+
+			
+			li {list-style: none; display: block;}
+				
+				p { }
+				
+				.prod-price {
+					font-size: 1rem;
+					font-weight: 300;
+					float: right;
+					font-weight: bold;
+					}
+				
+				}
+				 	  					 	  	
+		.additems {
+			background: lighten($teal, 50%);
+			margin: 2rem 1rem;
+			padding: 1rem 1rem;
+			border-top: 1px solid lighten($teal, 20%);
+			border-bottom: 1px solid lighten($teal, 20%);
+			display: flex;
+			justify-content: space-between;	
+			vertical-align: middle;	
+			
+				h3 {
+					font-size: 1rem;
+					line-height: 2rem;
+					vertical-align: middle;
+					}
+				
+				p { 
+					font-size: 1rem;
+					line-height: 2rem;
+					vertical-align: middle;
+					}		
+				}
+				
+		.added {
+			display: none;
+			background: $yellow;
+			position: fixed;
+			top: 6.4rem;
+			left: 2rem;
+			width: calc(100% - 4rem);
+			text-align: center;
+			padding: .2rem 1rem;
+			vertical-align: middle;	
+			border-radius: .3rem;
+			transition: all .3s ease;	
+				
+				p {color: #fff;}
+			
+			&:target {
+				display:block;
+				//margin: 1rem 1rem -2.4rem 1rem;
+				animation: roll-up 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+				}
+			
+			}				
+				 	  	 	  
+			  
+			  
+		.allergyinfo 	 {
+			background: lighten($pink, 50%);
+			margin: 2rem 1rem;
+			padding: 1rem 1rem;
+			border-top: 1px solid lighten($pink, 20%);
+			border-bottom: 1px solid lighten($pink, 20%);
+			vertical-align: middle;	
+			
+				h3 {
+					font-size: 1rem;
+					line-height: 2rem;
+					vertical-align: middle;
+					}
+				
+				p { 
+					font-size: 1rem;
+					line-height: 2rem;
+					vertical-align: middle;
+					}		
+				
+				
+				}	  
+			  
+			 
+			  
+	  	}// end prodcut page specifics
+	  	
+	  	
+	  	
+	  	
+
+	  
+	  
+	  
+	  
+	  
 	  
 	  
