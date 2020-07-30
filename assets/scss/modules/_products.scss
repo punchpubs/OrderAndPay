@@ -4,22 +4,59 @@
 	width: 90%;
 	margin: 0 auto;
 	display: flex;
-	//align-content: space-around;
 	flex-direction: column;
-	//border: 1px solid red;
+	
+	
+	@include breakpoint(break1) {}
+	@include breakpoint(break2) {		
+				flex-direction:row; 
+				flex-wrap: wrap;
+				justify-content:space-between;
+				}
+	@include breakpoint(break3) {}
+	@include breakpoint(break4) {}
+	@include breakpoint(break5) {}	
+	@include breakpoint(break6) {}	
+	
+	
 	
 	
 	 .menu-section {
 		//border: 1px solid blue;
 		margin-bottom: 2rem;
+		flex-wrap: wrap;
+		flex-basis: 1;
+		min-width: 0;		
+
 		
-		h2 {
-			 text-align: center;
-			 font-size: 1rem;
-			 background: $dark-blue;
-			 color: #fff;
-			 padding: 1rem;
-			 border-radius: .1rem;	 
+		
+		@include breakpoint(break1) {}
+		@include breakpoint(break2) {
+			width: calc(50% - 1rem);
+					}
+					
+		@include breakpoint(break3) {}
+		@include breakpoint(break4) {
+						width: calc(33% - 1rem);
+			
+		}
+		@include breakpoint(break5) {}	
+		@include breakpoint(break6) {}
+		
+		
+		
+		
+		
+		h2 { 
+			min-width: 0;
+			white-space: wrap;	
+			text-align: center;
+			font-size: 1rem;
+			background: $dark-blue;
+			color: #fff;
+			padding: 1rem;
+			border-radius: .1rem;
+	 
 			}
 				
 		a {
@@ -111,69 +148,128 @@
 	  
 	  // product page specific styles
 	  
+	
+	  
+	  
+	  
+	  
 	  .product-page {
-		  		  
-		header {
-			margin: 2rem 2rem 1rem;
-			}
 		  
-		.product-img {
-			width:100%;
-			}
 		  
-		.prod-desc {
-			padding: 0 1rem;
-			}
-		  
-		.prod-price {
-			font-size:1.1rem;
-			font-weight: bold;
-			float:right;
-			//color: $teal;
-			}
+		.product-page-top {
+				position: relative;
 		
-		.whynotadd {
-			background: lighten($yellow, 44%);
-			margin: 2rem 1rem;
-			padding: .2rem 1rem;
-			border-top: 1px solid lighten($yellow, 20%);
-			border-bottom: 1px solid lighten($yellow, 20%);
-
-			
-			li {list-style: none; display: block;}
-				
-				p { }
-				
-				.prod-price {
-					font-size: 1rem;
-					font-weight: 300;
-					float: right;
-					font-weight: bold;
+				header {
+					margin: 2rem 2rem 1rem;
 					}
-				
-				}
-				 	  	
-			.customise {
-			background: lighten($yellow, 70%);
-			margin: 2rem 1rem;
-			padding: .2rem 1rem;
-			border-top: 1px solid lighten($yellow, 40%);
-			border-bottom: 1px solid lighten($yellow, 40%);
-
-			
-			li {list-style: none; display: block;}
-				
-				p { }
-				
-				.prod-price {
-					font-size: 1rem;
-					font-weight: 300;
-					float: right;
-					font-weight: bold;
+				  
+				.product-img {
+					width:100%;
 					}
-				
+			
+				@include breakpoint(break2) {}
+				@include breakpoint(break3) {
+
+						.product-img {
+							margin: 0 auto;
+
+						}
+				 
 				}
-				 	  					 	  	
+				@include breakpoint(break4) {}
+				@include breakpoint(break5) {}	
+				@include breakpoint(break6) {}
+			}  
+			
+			
+		.product-page-mid {
+					flex-direction:row; 
+					flex-wrap: wrap;
+					justify-content:space-between;
+	
+				.prod-desc {
+					padding: 0 1rem;
+					}
+				  
+				.prod-price {
+					font-size:1.1rem;
+					font-weight: bold;
+					float:right;
+					}
+										
+				.whynotadd {
+					background: lighten($yellow, 44%);
+					margin: 2rem 1rem;
+					padding: .2rem 1rem;
+					border-top: 1px solid lighten($yellow, 20%);
+					border-bottom: 1px solid lighten($yellow, 20%);
+					
+					li {list-style: none; display: block;}
+						
+						p { }
+						
+						.prod-price {
+							font-size: 1rem;
+							font-weight: 300;
+							float: right;
+							font-weight: bold;
+							}	
+					}
+						 	  	
+				
+				.customise {
+						background: lighten($yellow, 70%);
+						margin: 2rem 1rem;
+						padding: .2rem 1rem;
+						border-top: 1px solid lighten($yellow, 40%);
+						border-bottom: 1px solid lighten($yellow, 40%);
+		
+					
+					li {list-style: none; display: block;}
+						
+						p { }
+						
+						.prod-price {
+							font-size: 1rem;
+							font-weight: 300;
+							float: right;
+							font-weight: bold;
+							}
+				
+					}		
+								
+			
+			
+				@include breakpoint(break2) {
+					
+					flex-direction:column; 
+					flex-wrap: wrap;
+					justify-content:space-between;
+					
+						.dish-info {
+							max-width: calc(50% -0.5rem);
+							margin-right: .5rem;
+						 
+						}
+					
+					
+					}
+					
+				@include breakpoint(break3) {}
+				@include breakpoint(break4) {}
+				@include breakpoint(break5) {}	
+				@include breakpoint(break6) {}
+	
+		
+			} //END MID
+			
+			
+		.product-page-bottom {
+			background: green;
+		
+			
+			
+		 	  					 	  	
 		.additems {
 			background: lighten($teal, 50%);
 			margin: 2rem 1rem;
@@ -197,28 +293,7 @@
 					}		
 				}
 				
-		.added {
-			display: none;
-			background: $yellow;
-			position: fixed;
-			top: 6.4rem;
-			left: 2rem;
-			width: calc(100% - 4rem);
-			text-align: center;
-			padding: .2rem 1rem;
-			vertical-align: middle;	
-			border-radius: .3rem;
-			transition: all .3s ease;	
-				
-				p {color: #fff;}
-			
-			&:target {
-				display:block;
-				//margin: 1rem 1rem -2.4rem 1rem;
-				animation: roll-up 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-				}
-			
-			}				
+						
 				 	  	 	  
 			  
 			  
@@ -243,9 +318,42 @@
 					}		
 				
 				
-				}	  
-			  
-			 
+				}
+				
+				
+				
+				@include breakpoint(break2) {}
+				@include breakpoint(break3) {}
+				@include breakpoint(break4) {}
+				@include breakpoint(break5) {}	
+				@include breakpoint(break6) {}		  
+			
+			}
+			
+			
+			.added {
+			display: none;
+			background: $yellow;
+			position: fixed;
+			top: 6.4rem;
+			left: 2rem;
+			width: calc(100% - 4rem);
+			text-align: center;
+			padding: .2rem 1rem;
+			vertical-align: middle;	
+			border-radius: .3rem;
+			transition: all .3s ease;	
+				
+				p {color: #fff;}
+			
+			&:target {
+				display:block;
+				//margin: 1rem 1rem -2.4rem 1rem;
+				animation: action-taken 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+				}
+			
+			}	  
+ 
 			  
 	  	}// end prodcut page specifics
 	  	

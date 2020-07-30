@@ -1109,22 +1109,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"/Tests/index-test.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/Tests/index-test.html",
-		"oF": 0
-		},
-	"/Tests/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/Tests/index.html",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -1133,7 +1117,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 615324383.20121205,
-	"displayValue": "OrderAndPay",
+	"displayValue": "OrderAndPAy",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-tar",
 	"iconImageWasSetByUser": 0,

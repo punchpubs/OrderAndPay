@@ -6,7 +6,7 @@
 	}
 */
 
-@keyframes roll-up {
+@keyframes action-taken {
 	
   0% {  
   	opacity: 0;
@@ -35,25 +35,52 @@
 }
 
 
-.rolldown {
-	animation: roll-down 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	}
+//animation: notice-me 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
-@keyframes roll-down {
+
+@keyframes notice-me {
 	
-  0% {
-  	margin-top:-90vh;
-  	transform-origin: 100% 0%;
+  0% {  
+ 	box-shadow: 
+		0px 0px 20px rgba(0, 0, 0, .2); 
   	}
   	
+  	30% {
+	box-shadow: 
+		0px 0px 30px rgba(0, 0, 0, .2),
+		0px 0px 5px rgba(255, 255, 255, .9),
+		0px 0px 12px rgba(0, 159, 161, 0.94); 
+
+	}
+  	
+  	50% {
+	box-shadow: 
+		0px 0px 19px rgba(0, 159, 161, 0.94), 
+		0px 0px 30px rgba(255, 255, 255, 1); 
+		
+		}
+
+  	70% {
+	box-shadow: 
+		0px 0px 30px rgba(0, 159, 161, 0.94), 	
+		0px 0px 40px rgba(255, 255, 255, 1); 
+	
+		}
+		
+  	90% {
+	box-shadow: 
+		0px 0px 40px rgba(0, 159, 161, 0.94),
+		0px 0px 50px rgba(255, 255, 255, .8); 
+		
+		}		
+
+
   	100% {
-  	margin-top:1rem;
-    transform-origin: 100% 0%;
+	box-shadow: 
+		0px 0px 100px rgba(0, 159, 161, 0.4),
+		0px 0px 80px rgba(255, 255, 255, .5); 
+		
   	}
-}
 
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
