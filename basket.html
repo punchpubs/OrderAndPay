@@ -1,7 +1,7 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
  <html>
  	<head>
- 		<title>Your Order</title>
+ 		<title>Basket</title>
  			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
  			
@@ -65,56 +65,99 @@
 
 	<main id="content" class="basket-page">
 		
-   <h1>Your Order</h1>
+		<header>
+			<h1 class="menu-page">Your Order</h1>
+		</header>
+					
    
-
-   
-   
-   
-   <div class="order-items">
-	   
-	  <table>
-		  <tr><th>Item</th><th>cost</th><th>edit</th></tr>
-		  <tr><td>Item on the order no.1</td><td>£0.00</td><td><input type="checkbox"></td></tr>
-		  <tr><td>Item on the order no.2</td><td>£0.00</td><td><input type="checkbox"></td></tr>
-		  <tr><td>Item on the order no.3</td><td>£0.00</td><td><input type="checkbox"></td></tr>
-		  <tr><td>Item on the order no.4</td><td>£0.00</td><td><input type="checkbox"></td></tr>
-		  <tr><td>Item on the order no.5</td><td>£0.00</td><td><input type="checkbox"></td></tr>
-		  <tr><td>Item on the order no.6</td><td>£0.00</td><td><input type="checkbox"></td></tr>
-		  <tr><td>Item on the order no.7</td><td>£0.00</td><td><input type="checkbox"></td></tr>
-		  <tr><td>Item on the order no.8</td><td>£0.00</td><td><input type="checkbox"></td></tr>
-		  <tr><td>Item on the order no.9</td><td>0.00</td><td><input type="checkbox"></td></tr>  
-		  <tr><td>Item on the order no.10</td><td>£0.00</td><td><input type="checkbox"></td></tr>
-	  </table>  
-			  
-	   table number?
-   
-   email for receipt
-   
-   tickbox for mailing list		  
-			  
+		   <div class="order-items">
+			   
+			  <table class="basket">
+				  <thead>
+					  <tr class="basket-header"><th>Item</th><th>cost</th><th>Remove</th></tr>
+				</thead>
+				<tbody>
+				  <tr class="basket-item"><td>Item on the order no.1</td><td>£0.00</td><td><input type="checkbox"></td></tr>
+				  <tr class="basket-item"><td>Item on the order no.2</td><td>£0.00</td><td><input type="checkbox"></td></tr>
+				  <tr class="basket-item"><td>Item on the order no.3</td><td>£0.00</td><td><input type="checkbox"></td></tr>
+				  <tr class="basket-item"><td>Item on the order no.4</td><td>£0.00</td><td><input type="checkbox"></td></tr>
+				  <tr class="basket-item"><td>Item on the order no.5</td><td>£0.00</td><td><input type="checkbox"></td></tr>
+				  <tr class="basket-item"><td>Item on the order no.6</td><td>£0.00</td><td><input type="checkbox"></td></tr>
+				  <tr class="basket-item"><td>Item on the order no.7</td><td>£0.00</td><td><input type="checkbox"></td></tr>
+				  <tr class="basket-item"><td>Item on the order no.8</td><td>£0.00</td><td><input type="checkbox"></td></tr>
+				  <tr class="basket-item"><td>Item on the order no.9</td><td>£0.00</td><td><input type="checkbox"></td></tr>  
+			  	</tbody>
+			  	<tfoot>
+				  <tr class="basket-total"><td>Order Value</td><td>£0.00</td><td><small><button>Update</button></small></td></tr>
+				</tfoot>
+			  </table>  
+			
+		   </div><!-- eof order-items -->
+		   		
+		   		
+		   	<div class="basket-table">
+			   	<h3>Your Table Number: 
+				   	<select id = "table">
+		               <option value = "1">Table 1</option>
+		               <option value = "2">Table 2</option>
+		               <option value = "3">Table 3</option>
+		               <option value = "4">Table 4</option>
+		               <option value = "5">Table 5</option>
+		               <option value = "6">Table 6</option>
+		               <option value = "7">Table 7</option>
+		               <option value = "8">Table 8</option>
+		               <option value = "9">Table 9</option>
+		               <option value = "10">Table 10</option>
+		               <option value = "11">Table 11</option>
+		               <option value = "12">Table 12</option>
+               		</select>
+               	</h3>
+			   	<p>We need your table number so we're know where to bring your order to.</p>
+		   	</div><!-- eof   table-->
+		   	
+		   	<div class="basket-email">
+			   	<h3>Receipt Email:</h3>
+			   	<p>Where should we send your receipt?</p>
+			   	<p><input type="email" placeholder="enter your email address..."></p>	
+			   	<p><input type="checkbox"> Please tick if you'd like to be kept up to date with news and special offers.</p>
+		   	</div><!-- eof email-->
+  
+					  
 			<div class="additems">
-		<h3>Your order total:</h3>
+				<h3>Your order total:</h3>
+				
+				<p>£0:00</p>
+				<a href="#addedNotice" class="button addbasket">Place Order</a>
 		
-		<p>£0:00</p>
-		<a href="#addedNotice" class="button addbasket">Pay now</a>
-
-	</div>		  
+			</div>		  
 	   
 	   
-   </div><!-- end order items-->	   
+		</div><!-- end order items-->	   
 
 	</main><!-- end content -->
+
 
 
 </div><!--end container-->
 
 
+		<div class="controls-container">
+
 	<div class="controls">
+	
 	<button id="nav-toggle" class="navToggle">MENU</button>
 	<button id="nav-basket" class="navBasket">£0:00</button>
+	
+			</div><!-- eof controls-->
 
+
+	<div class="breadcrumb">
+		<a href="home.html" class="current-location">Back to menu?</a>
 	</div>
+	
+
+	</div><!-- eof controls container-->
+
 
 
 </body>

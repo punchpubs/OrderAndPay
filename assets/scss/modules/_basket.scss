@@ -1,0 +1,122 @@
+  // Basket
+  
+  
+  .basket-page {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	
+	
+	@include breakpoint(break1) {}
+	@include breakpoint(break2) {}
+	@include breakpoint(break3) {}
+	@include breakpoint(break4) {}
+	@include breakpoint(break5) {}	
+	@include breakpoint(break6) {}	
+	
+	
+	.order-items{margin: 0 1rem;}
+		
+		table.basket {
+			border-collapse: collapse;
+			width:100%;
+			max-width:60rem;
+			margin: 0 auto; 
+			text-align: left;
+			background: $dark-blue;
+			
+			thead {
+				
+				.basket-header th {
+				padding: 1rem;
+				border: none;	
+					&:last-of-type {float: right;}
+				
+				}
+			}
+			
+			tbody {
+				background: lighten($dark-blue, 80%);
+				} 
+			
+			tfoot {
+				background: #fff;
+					
+					.basket-total td {padding: 1rem 1rem;
+					
+					button {float: right;}
+				}				
+			}
+		
+			tr{
+				width:100%;
+				text-align: left; 
+				border-bottom: 1px solid lighten($dark-blue, 60%);
+				
+				}
+			
+			.basket-header{
+				background: $dark-blue;
+				color: #fff;
+			}
+				
+
+	
+			.basket-item td {
+					padding: 1rem;
+						&:last-of-type {float: right;}
+				}
+		
+				
+				
+			}//end table
+			
+			
+			.basket-table {
+						background: lighten($yellow, 44%);
+						margin: 2rem 1rem 0;
+						padding: .2rem 1rem;
+						border-top: 1px solid lighten($yellow, 20%);
+						border-bottom: 1px solid lighten($yellow, 20%);
+						}
+			
+			.basket-email {
+						background: lighten($yellow, 70%);
+						margin: 2rem 1rem 0;
+						padding: .2rem 1rem;
+						border-top: 1px solid lighten($yellow, 40%);
+						border-bottom: 1px solid lighten($yellow, 40%);
+						}
+	
+	
+			.additems {
+			background: lighten($teal, 50%);
+			margin: 2rem 1rem;
+			padding: 1rem 1rem;
+			border-top: 1px solid lighten($teal, 20%);
+			border-bottom: 1px solid lighten($teal, 20%);
+			display: flex;
+			justify-content: space-between;	
+			vertical-align: middle;
+			
+			@include breakpoint(break2) {	
+						justify-content: flex-end;	
+						}
+
+				h3 {
+					font-size: 1rem;
+					line-height: 2rem;
+					margin-right: 1rem;
+					vertical-align: middle;
+					}
+				
+				p { 
+					font-size: 1rem;
+					line-height: 2rem;
+					margin-right: 1rem;
+					vertical-align: middle;
+					}		
+				}
+				
+	}	//end order items

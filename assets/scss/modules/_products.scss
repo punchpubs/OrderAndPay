@@ -1,4 +1,4 @@
-  /// PRODUCTS - USED ON LISTING AND PRODUCT PAGE
+  // PRODUCTS - USED ON LISTING AND PRODUCT PAGE
 
 .products {
 	width: 90%;
@@ -24,7 +24,6 @@
 	 .menu-section {
 		//border: 1px solid blue;
 		margin-bottom: 2rem;
-		flex-wrap: wrap;
 		flex-basis: 1;
 		min-width: 0;		
 
@@ -42,9 +41,6 @@
 		}
 		@include breakpoint(break5) {}	
 		@include breakpoint(break6) {}
-		
-		
-		
 		
 		
 		h2 { 
@@ -68,32 +64,32 @@
 				}
 		}	
 			
-		.product {
-			margin-bottom: .4rem;
-			box-shadow: 0px 3px 5px lighten($dark-blue, 80%);
-			padding: .3rem 1rem;;
-			border: solid #fff .0325rem;
-			border-bottom: solid lighten($dark-blue, 60%) .0325rem;
-			transition: all .5s ease; 
+			.product {
+				margin-bottom: .4rem;
+				box-shadow: 0px 3px 5px lighten($dark-blue, 80%);
+				padding: .3rem 1rem;;
+				border: solid #fff .0325rem;
+				border-bottom: solid lighten($dark-blue, 60%) .0325rem;
+				transition: all .5s ease; 
+						
+				&:hover{
+					background: #fff;
+					box-shadow: 0px 4px 6px lighten($dark-blue, 70%);
+					}
 					
-			&:hover{
-				background: #fff;
-				box-shadow: 0px 4px 6px lighten($dark-blue, 70%);
+				&:active {
+					background: #fff;
+					box-shadow: 0px 0px 0px lighten($dark-blue, 70%), inset 0 10px 15px lighten($dark-blue, 80%), inset 0 -15px 15px lighten($dark-blue, 80%), ;	
+	
+					} 
+				
 				}
+					
 				
-			&:active {
-				background: #fff;
-				box-shadow: 0px 0px 0px lighten($dark-blue, 70%), inset 0 10px 15px lighten($dark-blue, 80%), inset 0 -15px 15px lighten($dark-blue, 80%), ;	
-
-				} 
-			
-			}
-				
-			
-		  
-	 	}
-					  
-	  }//products
+			  
+		 	}
+						  
+		  }//products
 	  
 	  
 //Allergy markers 
@@ -153,119 +149,132 @@
 	  
 	  
 	  
-	  .product-page {
+	    .product-page {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
 		  
-		  
-		.product-page-top {
-				position: relative;
-		
-				header {
-					margin: 2rem 2rem 1rem;
-					}
-				  
-				.product-img {
-					width:100%;
-					}
-			
-				@include breakpoint(break2) {}
-				@include breakpoint(break3) {
-
-						.product-img {
-							margin: 0 auto;
-
-						}
-				 
-				}
-				@include breakpoint(break4) {}
-				@include breakpoint(break5) {}	
-				@include breakpoint(break6) {}
-			}  
-			
-			
-		.product-page-mid {
-					flex-direction:row; 
-					flex-wrap: wrap;
-					justify-content:space-between;
-	
-				.prod-desc {
-					padding: 0 1rem;
-					}
-				  
-				.prod-price {
-					font-size:1.1rem;
-					font-weight: bold;
-					float:right;
-					}
-										
-				.whynotadd {
-					background: lighten($yellow, 44%);
-					margin: 2rem 1rem;
-					padding: .2rem 1rem;
-					border-top: 1px solid lighten($yellow, 20%);
-					border-bottom: 1px solid lighten($yellow, 20%);
-					
-					li {list-style: none; display: block;}
-						
-						p { }
-						
-						.prod-price {
-							font-size: 1rem;
-							font-weight: 300;
-							float: right;
-							font-weight: bold;
-							}	
-					}
-						 	  	
-				
-				.customise {
-						background: lighten($yellow, 70%);
-						margin: 2rem 1rem;
-						padding: .2rem 1rem;
-						border-top: 1px solid lighten($yellow, 40%);
-						border-bottom: 1px solid lighten($yellow, 40%);
-		
-					
-					li {list-style: none; display: block;}
-						
-						p { }
-						
-						.prod-price {
-							font-size: 1rem;
-							font-weight: 300;
-							float: right;
-							font-weight: bold;
-							}
-				
-					}		
-								
-			
-			
-				@include breakpoint(break2) {
-					
-					flex-direction:column; 
-					flex-wrap: wrap;
-					justify-content:space-between;
-					
-						.dish-info {
-							max-width: calc(50% -0.5rem);
-							margin-right: .5rem;
-						 
-						}
-					
-					
-					}
-					
+				@include breakpoint(break2) {}				
 				@include breakpoint(break3) {}
 				@include breakpoint(break4) {}
 				@include breakpoint(break5) {}	
 				@include breakpoint(break6) {}
 	
+			.product-page-top {
+	
+					
+					header {
+						margin: 2rem 2rem 1rem;
+						}
+					  
+					.product-img {
+						width:100%;
+						}
+				
+				}  
+			
+			
+			.product-page-mid {
+						display: flex;
+						flex-wrap: wrap;
+						width: 100%;
+                       
+						
+						@include breakpoint(break2) {
+
+						}
+							
+					.dish-info {
+						width:100%;
+						flex-basis: 1;
+						justify-content: flex-start;
+						
+						 
+
+						
+						@include breakpoint(break2) {
+							
+							width: calc(50% - 2rem);
+							&:nth-last-child(1){flex-grow: 1 }
+	
+							}
+					
+						@include breakpoint(break5) {
+							
+							width: calc(33% - 3rem);
+	
+							}
+					
+						@include breakpoint(break6) {
+							
+							width: calc(25% - 4rem);
+	
+							}
 		
-			} //END MID
+		
+						
+						}		
+													
+					.prod-desc {
+						padding: 0 1rem;
+						padding: .2rem 1rem;
+						margin: 2rem 1rem 0;
+						
+						@include breakpoint(break2) {padding: 1rem 1rem;}
+						@include breakpoint(break5) {padding: 2rem 1rem; background: #fff;}
+							}
+					  
+					.prod-price {
+						font-size:1.1rem;
+						font-weight: bold;
+						float:right;
+						}
+											
+					.whynotadd {
+						background: lighten($yellow, 44%);
+						margin: 2rem 1rem 0;
+						padding: .2rem 1rem;
+						border-top: 1px solid lighten($yellow, 20%);
+						border-bottom: 1px solid lighten($yellow, 20%);
+						
+						li {list-style: none; display: block;}
+							
+							p { }
+							
+							.prod-price {
+								font-size: 1rem;
+								font-weight: 300;
+								float: right;
+								font-weight: bold;
+								}	
+						}
+							 	  						
+					.customise {
+							background: lighten($yellow, 70%);
+							margin: 2rem 1rem 0;
+							padding: .2rem 1rem;
+							border-top: 1px solid lighten($yellow, 40%);
+							border-bottom: 1px solid lighten($yellow, 40%);
+			
+						
+						li {list-style: none; display: block;}
+							
+							p { }
+							
+							.prod-price {
+								font-size: 1rem;
+								font-weight: 300;
+								float: right;
+								font-weight: bold;
+								}
+					
+						}				
+								
+				} //END MID
 			
 			
 		.product-page-bottom {
-			background: green;
+			//background: green;
 		
 			
 			
@@ -278,17 +287,23 @@
 			border-bottom: 1px solid lighten($teal, 20%);
 			display: flex;
 			justify-content: space-between;	
-			vertical-align: middle;	
+			vertical-align: middle;
 			
+			@include breakpoint(break2) {	
+						justify-content: flex-end;	
+						}
+
 				h3 {
 					font-size: 1rem;
 					line-height: 2rem;
+					margin-right: 1rem;
 					vertical-align: middle;
 					}
 				
 				p { 
 					font-size: 1rem;
 					line-height: 2rem;
+					margin-right: 1rem;
 					vertical-align: middle;
 					}		
 				}
